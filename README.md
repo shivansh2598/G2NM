@@ -1,4 +1,4 @@
-# G2NM — Get to Know Me
+# G2KM — Get to Know Me
 
 A **data-driven portfolio terminal** — one codebase, any number of portfolio websites. Visitors interact with a terminal UI to explore your professional background, skills, projects, and personality. Backed by a RAG pipeline with DeepSeek.
 
