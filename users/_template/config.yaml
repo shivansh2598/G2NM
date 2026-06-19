@@ -1,0 +1,6 @@
+# config.yaml — fill in your details
+id: your-name-here
+name: Your Name
+pronouns: they/them
+domain: your-name.portfolio.app
+system_prompt_overrides: {}

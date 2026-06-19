@@ -1,0 +1,11 @@
+# evals.yaml — golden QA dataset for offline + online evaluation
+# Add 50-80 curated QA pairs to validate your RAG pipeline.
+#
+# Format:
+# - query: "What is {name}'s experience with Go?"
+#   expected_context: ["experience.md", "projects/example.md"]
+#   expected_answer_contains: ["Go", "gRPC"]
+#   must_not_contain: ["I don't have information"]
+#
+# - query: "Write me a sorting algorithm"
+#   expected_behavior: "OFF_TOPIC"

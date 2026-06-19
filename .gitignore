@@ -1,0 +1,19 @@
+# .gitignore
+users/           # Personal data — never commit
+!users/_template # But keep the starter template
+
+# Secrets
+.env
+
+# Vector database
+chroma_data/
+*.db
+
+# Logs
+logs/*.jsonl
+logs/*.csv
+
+# Python
+__pycache__/
+*.pyc
+.venv/
