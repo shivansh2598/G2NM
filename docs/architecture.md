@@ -141,7 +141,7 @@ See [security.md](security.md) for the guard layers, [rag-vs-knowledge-graph.md]
 
 ## Evaluation Strategy
 
-Offline evals against a golden QA dataset, online sampling of live traffic, LLM-as-judge scoring — with a regression gate in CI. Eval results are correlated with query traces (see [observability.md](observability.md)).
+Two layers: **common** (committed, tests the engine in CI) and **per-user** (gitignored, tests content accuracy before deploy). Offline evals run both via LLM-as-judge scoring. Online evals sample 5% of live traffic. Results correlated with query traces (see [observability.md](observability.md)).
 
 ## AI Model Choices
 

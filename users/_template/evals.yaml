@@ -1,11 +1,9 @@
-# evals.yaml — golden QA dataset for offline + online evaluation
-# Add 50-80 curated QA pairs to validate your RAG pipeline.
+# evals.yaml — per-user golden QA dataset (gitignored)
+# Tests YOUR content accuracy. Runs locally before deploy.
+# For common engine tests (runs in CI), see evaluation/common_evals.yaml
 #
 # Format:
 # - query: "What is {name}'s experience with Go?"
 #   expected_context: ["experience.md", "projects/example.md"]
 #   expected_answer_contains: ["Go", "gRPC"]
 #   must_not_contain: ["I don't have information"]
-#
-# - query: "Write me a sorting algorithm"
-#   expected_behavior: "OFF_TOPIC"

@@ -36,7 +36,7 @@ uvicorn app.main:app --reload
 ├── tui/               # Terminal UI frontend (xterm.js)
 ├── prompts/           # Versioned prompt templates (never hardcoded)
 ├── security/          # Input, content, and output guardrails
-├── evaluation/        # Golden QA dataset + offline/online evals
+├── evaluation/        # Common engine tests (CI) + offline/online eval scripts
 ├── observability/     # Per-query tracing + cost tracking
 ├── services/          # Ingestion pipeline (chunk + embed + store)
 ├── users/             # Per-user data (gitignored, _template committed)
