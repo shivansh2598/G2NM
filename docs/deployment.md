@@ -23,8 +23,8 @@ Each person deploys their own **independent instance** with their own database, 
 ### Step 1: Clone the repo
 
 ```bash
-git clone https://github.com/shivi/portfolio-orchestrator.git
-cd portfolio-orchestrator
+git clone https://github.com/shivansh2598/G2KM.git
+cd G2KM
 ```
 
 ### Step 2: Create personal data directory

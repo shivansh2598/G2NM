@@ -5,8 +5,8 @@ A **data-driven portfolio terminal** — one codebase, any number of portfolio w
 ## Quick start
 
 ```bash
-git clone <this-repo>
-cd portfolio-orchestrator
+git clone https://github.com/shivansh2598/G2KM.git
+cd G2KM
 
 # Copy the template and make it yours
 cp -r users/_template users/your-name
