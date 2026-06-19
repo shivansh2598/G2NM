@@ -2,11 +2,11 @@
 
 ## Overview
 
-A **data-driven portfolio orchestrator** — a single codebase that powers multiple portfolio websites by swapping only the knowledge base. The terminal UI (TUI), RAG pipeline, LLM integration, and guardrails are shared infrastructure. Each collaborator brings their own markdown dataset and configuration, producing their own fully independent portfolio site — no code changes required.
+A **data-driven portfolio terminal** — one codebase, any number of portfolio websites. Each person brings their own markdown files and config; the engine stays the same.
 
-### Deployment Model: Independent Instances, Not Multi-Tenant SaaS
+### How it works
 
-Each person deploys their **own instance** with their own database credentials. There is no shared infrastructure, no shared database, and no multi-tenant routing at runtime. The codebase is shared via GitHub; deployments are independent.
+Each person clones the repo, adds their data, and deploys their own site.
 
 ```
 ┌──────────────────────────────┐
@@ -38,18 +38,16 @@ portfolio portfolio portfolio
 - `users/` is in `.gitignore`; the repo ships `users/_template/` as a starting point
 - Each person provides their own DB credentials and API keys via `.env`
 
-**Key principle:** The code doesn't know about Shivi or Harshit or Shashwat. It knows about a generic "user" who has markdown files, a config file, and a vector collection. The same codebase produces independent portfolio sites for anyone who clones it.
+**Key principle:** The code doesn't know about Shivi or Harshit or Shashwat. It knows about a generic "user" who has markdown files, a config file, and a vector collection. The same codebase produces portfolio sites for anyone who clones it.
 
 ## Motivation
 
 - **Code reuse** — One repository, any number of portfolio sites. No forking, no duplicating logic.
 - **Collaboration** — Multiple people can work on the engine while each powers their own site.
-- **Demonstration** — Proves data-driven architecture, separation of concerns, and multi-tenant design thinking.
+- **Demonstration** — Proves data-driven architecture and RAG engineering.
 - **Memorable** — Terminal-style UI stands out; RAG backend proves deep AI engineering skill.
 
 ## System Components
-
-Each deployment is a **single-user instance** — one container serves one person's portfolio.
 
 ```
 ┌───────────────────────────────────────────────────────┐
@@ -85,8 +83,6 @@ Each deployment is a **single-user instance** — one container serves one perso
 │  └── evals.yaml                                       │
 └───────────────────────────────────────────────────────┘
 ```
-
-**Key point:** There is no `?user=` routing, no multi-collection DB, and no shared infrastructure at runtime. The deployment *is* the user. Harshit's EC2 instance runs Harshit's data, Shivi's runs Shivi's. They never share a database or API gateway.
 
 ## What's in the deployment
 

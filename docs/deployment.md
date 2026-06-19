@@ -14,7 +14,7 @@ GitHub Repo (shared engine)
     → Live site at {name}.portfolio.app
 ```
 
-Each person deploys their own **independent instance** with their own database, API keys, and hosting. The only shared artifact is the engine code in the GitHub repository.
+Each person deploys their own site with their own database, API keys, and hosting. The only shared artifact is the engine code in the GitHub repository.
 
 ---
 

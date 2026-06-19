@@ -1,6 +1,6 @@
 # app/
 
-API layer and RAG pipeline. Single-user per deployment — no multi-tenant routing.
+API layer and RAG pipeline.
 
 ## Structure
 
